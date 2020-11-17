@@ -15,7 +15,7 @@ export default function Home({data, anilist}) {
       </Head>
       {
         anilist.Page.media.map(show => (
-          <Container name={show.title.romaji} />
+          <Container name={show.title.romaji} image={}/>
           ))
       }
     </>
