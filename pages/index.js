@@ -6,19 +6,22 @@ import { getAllPostsForHome } from '../lib/api/api.js'
 import Container from '../components/Container';
 
 export default function Home({data, anilist}) {
-  console.log(anilist);
+  //console.log(anilist);
   //console.log(data);
   return (
-    <>
+    <div className='bg-gray-200'>
       <Head>
           <title>Learning nextjs</title>
       </Head>
+      <div>
       {
         anilist.Page.media.map(show => (
-          <Container name={show.title.romaji} image={}/>
+          <Container name={show.title.romaji} image={show.coverImage.large} description={show.description}/>
           ))
       }
-    </>
+      </div>
+    </div>
+    
   )
 }
 
