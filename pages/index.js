@@ -9,7 +9,7 @@ export default function Home({data, anilist}) {
   //console.log(anilist);
   //console.log(data);
   return (
-    <div className='bg-gray-200'>
+    <div className='bg-blue-50 h-full'>
       <Head>
           <title>Learning nextjs</title>
       </Head>
