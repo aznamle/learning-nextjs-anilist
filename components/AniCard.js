@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Container({ name, image, description }) {
+export default function AniCard({ name, image, description}) {
     return (
         <div class="mx-auto lg:w-1/2 lg:flex lg:flex-row lg:h-auto mx-auto p-5">
             <img className='rounded tr-md rounded-tl-md h-48 w-full lg:h-auto lg:w-2/5 lg: rounded-bl-md lg:rounded-br'
@@ -12,4 +12,4 @@ export default function Container({ name, image, description }) {
             </div>
         </div>
     )
-};
+}
