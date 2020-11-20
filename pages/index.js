@@ -18,17 +18,7 @@ export default function Home({ data }) {
         <a>View</a>
       </Link>
         <div>
-        {/* {
-          data.entries.map(anime => (
-            <div>
-              {
-                anime.media.map(show => (
-                  <h1>{show.title.romaji}</h1>
-                ))
-              }
-            </div>
-          ))
-        } */}
+
         </div>
       </div>
     </div>
