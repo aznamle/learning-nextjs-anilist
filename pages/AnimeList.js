@@ -5,7 +5,7 @@ import { getPopularAnime } from '../lib/api'
 export default function AnimeList({ anilist }) {
   console.log(anilist)
     return (
-        <div>
+        <div className='bg-gray-100 h-full'>
           {
             anilist.Page.media.map(show => (
               <AniCard name={show.title.romaji} image={show.coverImage.large} description={show.description}/>
