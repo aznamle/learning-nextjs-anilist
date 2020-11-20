@@ -8,13 +8,14 @@ export default function AnimeList({ anilist }) {
         <div>
           {
             anilist.Page.media.map(show => (
-              <AniCard  name={show.title.romaji} image={show.coverImage.large} description={show.description}/>
+              <AniCard name={show.title.romaji} image={show.coverImage.large} description={show.description}/>
             ))
           }
         </div>
     )
 };
 
+//AniList graphql API
 export async function getStaticProps() {
   const anilist = (await getPopularAnime())
   return {
@@ -24,6 +25,7 @@ export async function getStaticProps() {
   }
 }
 
+//Jikan MAL API 
 // export async function getStaticProps() {
 //   try {
 //       const response = await fetch(`https://api.jikan.moe/v3/season/2020/fall`);
