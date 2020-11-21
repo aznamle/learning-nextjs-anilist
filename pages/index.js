@@ -9,7 +9,7 @@ import AniCard from '../components/AniCard';
 export default function Home({ list }) {
   console.log(list);
   return (
-    <div className='bg-gray-100 h-full'>
+    <div className='bg-gray-200'>
       <Head>
           <title>Learning nextjs</title>
       </Head>
@@ -17,7 +17,7 @@ export default function Home({ list }) {
       <Link href='/AnimeList'>
         <a>View</a>
       </Link>
-        <div className='grid grid-cols-3 p-20'>
+        <div className='grid grid-cols-3 p-24'>
         {
           list.map(show => (
             <AniCard name={show.media.title.romaji} image={show.media.coverImage.large} description={show.notes} />
