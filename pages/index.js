@@ -17,10 +17,10 @@ export default function Home({ list }) {
       <Link href='/AnimeList'>
         <a>View</a>
       </Link>
-        <div>
+        <div className='grid grid-cols-3 p-20'>
         {
           list.map(show => (
-            <AniCard name={show.media.title.romaji} description={show.notes}/>
+            <AniCard name={show.media.title.romaji} image={show.media.coverImage.large} description={show.notes} />
           ))
         }
         </div>
