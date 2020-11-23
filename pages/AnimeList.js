@@ -8,7 +8,7 @@ export default function AnimeList({ anilist }) {
         <div className='bg-gray-100 h-full'>
           {
             anilist.Page.media.map(show => (
-              <AniCard name={show.title.romaji} image={show.coverImage.large} description={show.description}/>
+              <AniCard name={show.title.romaji} image={show.coverImage.medium} description={show.description}/>
             ))
           }
         </div>
